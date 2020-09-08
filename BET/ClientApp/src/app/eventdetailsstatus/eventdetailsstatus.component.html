@@ -1,0 +1,18 @@
+<p>eventdetailsstatus works!</p>
+<div *ngIf="!statslist">
+  Loading...
+</div>
+<table *ngIf="statslist">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sts of statslist">
+      <td>{{sts.EventDetailStatusID}}</td>
+      <td>{{sts.EventDetailStatusName}}</td>
+    </tr>
+  </tbody>
+</table>
